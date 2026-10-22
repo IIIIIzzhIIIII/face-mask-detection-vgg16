@@ -1,0 +1,59 @@
+# ---------------- 数据集（体积大，按 README 运行下载脚本获取） ----------------
+dataset/
+data/
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# ---------------- 模型权重（单文件 512MB，超过 GitHub 100MB 限制） ----------------
+*.pdparams
+*.pdopt
+*.pdmodel
+
+# ---------------- 运行时生成的文件 ----------------
+outputs/predictions/
+outputs/screenshots/
+outputs/videos/
+outputs/camera_check*.jpg
+outputs/*.log
+_*.log
+*.log
+
+# ---------------- 临时实验 / 调试文件（不属于最终 PaddlePaddle 实现） ----------------
+/k1
+/k2
+/_ui_check.py
+/_check_*.txt
+
+# ---------------- Python ----------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---------------- IDE / 编辑器 ----------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------- 系统文件 ----------------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------------- 安装包与临时文件 ----------------
+*.exe
+*.msi
+*.tmp

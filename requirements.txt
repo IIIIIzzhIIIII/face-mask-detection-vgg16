@@ -1,0 +1,25 @@
+# 运行环境：Windows + Python 3.12
+# 安装命令（国内镜像，速度快）：
+#   py -3.12 -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+# 飞桨 GPU 版（必需，自带 CUDA/cuDNN 运行库，不需要单独装 CUDA）
+paddlepaddle-gpu==2.6.2
+
+# 图像处理与绘图
+numpy
+Pillow
+matplotlib
+# 注意：必须用 OpenCV 4.x！OpenCV 5 移除了 Haar 人脸检测接口（cv2.CascadeClassifier）
+# 和自带的级联分类器文件，会导致“人脸检测”功能不可用
+opencv-python==4.10.0.84
+
+# 评估指标（准确率/精确率/召回率/F1/mAP）
+scikit-learn
+
+# 网页演示界面（上传图片/浏览器拍照识别）
+gradio
+
+# ---------------------------------------------------------------
+# 可选：Windows 下使用 GPU 时需要的 cuDNN 运行库（约 700MB）
+# 不必手动装，直接运行  py -3.12 fix_cudnn.py  即可自动安装
+# nvidia-cudnn-cu11==8.9.5.29

@@ -1,0 +1,46 @@
+{
+  "split": "test",
+  "model_path": "E:\\毕设\\code\\outputs\\best_model.pdparams",
+  "num_samples": 600,
+  "class_names": [
+    "with_mask",
+    "without_mask"
+  ],
+  "accuracy": 1.0,
+  "precision_macro": 1.0,
+  "recall_macro": 1.0,
+  "f1_macro": 1.0,
+  "precision_weighted": 1.0,
+  "recall_weighted": 1.0,
+  "f1_weighted": 1.0,
+  "precision_per_class": {
+    "with_mask": 1.0,
+    "without_mask": 1.0
+  },
+  "recall_per_class": {
+    "with_mask": 1.0,
+    "without_mask": 1.0
+  },
+  "f1_per_class": {
+    "with_mask": 1.0,
+    "without_mask": 1.0
+  },
+  "mAP_AP": 1.0,
+  "AUC": 1.0,
+  "confusion_matrix": [
+    [
+      300,
+      0
+    ],
+    [
+      0,
+      300
+    ]
+  ],
+  "params_M": 134.27,
+  "model_size_MB": 512.2,
+  "inference_ms_per_image": 8.26,
+  "inference_fps": 121.0,
+  "device": "gpu",
+  "eval_time_sec": 13.62
+}

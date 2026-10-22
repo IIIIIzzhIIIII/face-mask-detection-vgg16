@@ -1,0 +1,23 @@
+VGG16 口罩识别模型 —— test 集评估报告
+模型：E:\毕设\code\outputs\best_model.pdparams   设备：gpu   样本数：600
+============================================================
+              precision    recall  f1-score   support
+
+       已佩戴口罩     1.0000    1.0000    1.0000       300
+       未佩戴口罩     1.0000    1.0000    1.0000       300
+
+    accuracy                         1.0000       600
+   macro avg     1.0000    1.0000    1.0000       600
+weighted avg     1.0000    1.0000    1.0000       600
+
+准确率 Accuracy           : 1.0000
+精确率 Precision (macro)  : 1.0000
+召回率 Recall    (macro)  : 1.0000
+F1 值  F1-Score (macro)   : 1.0000
+F1 值  F1-Score (weighted): 1.0000
+平均精度 mAP (AP)         : 1.0000
+AUC                       : 1.0000
+混淆矩阵 [[TN,FP],[FN,TP]]: [[300, 0], [0, 300]]
+模型参数量                : 134.27 M
+模型文件大小              : 512.20 MB
+单张推理耗时              : 8.26 ms (121.0 FPS)
